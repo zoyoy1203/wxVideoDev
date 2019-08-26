@@ -1,4 +1,4 @@
-package com.zyuanyuan.common.utils;
+package com.zyuanyuan.utils;
 
 import org.apache.commons.codec.binary.Base64;
 

@@ -1,17 +1,11 @@
 package com.zyuanyuan.mapper;
 
-import com.zyuanyuan.model.SearchRecords;
+import com.zyuanyuan.pojo.SearchRecords;
+import com.zyuanyuan.utils.MyMapper;
 
-public interface SearchRecordsMapper {
-    int deleteByPrimaryKey(String id);
+import java.util.List;
 
-    int insert(SearchRecords record);
-
-    int insertSelective(SearchRecords record);
-
-    SearchRecords selectByPrimaryKey(String id);
-
-    int updateByPrimaryKeySelective(SearchRecords record);
-
-    int updateByPrimaryKey(SearchRecords record);
+public interface SearchRecordsMapper extends MyMapper<SearchRecords> {
+	
+	public List<String> getHotwords();
 }

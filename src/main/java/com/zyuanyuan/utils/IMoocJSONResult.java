@@ -1,4 +1,4 @@
-package com.zyuanyuan.common.utils;
+package com.zyuanyuan.utils;
 
 /**
  * @Description: 自定义响应数据结构

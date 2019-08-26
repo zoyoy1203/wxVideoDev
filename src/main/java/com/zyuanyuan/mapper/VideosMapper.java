@@ -1,17 +1,7 @@
 package com.zyuanyuan.mapper;
 
-import com.zyuanyuan.model.Videos;
+import com.zyuanyuan.pojo.Videos;
+import com.zyuanyuan.utils.MyMapper;
 
-public interface VideosMapper {
-    int deleteByPrimaryKey(String id);
-
-    int insert(Videos record);
-
-    int insertSelective(Videos record);
-
-    Videos selectByPrimaryKey(String id);
-
-    int updateByPrimaryKeySelective(Videos record);
-
-    int updateByPrimaryKey(Videos record);
+public interface VideosMapper extends MyMapper<Videos> {
 }

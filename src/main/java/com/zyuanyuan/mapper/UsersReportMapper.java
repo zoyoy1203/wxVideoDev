@@ -1,17 +1,7 @@
 package com.zyuanyuan.mapper;
 
-import com.zyuanyuan.model.UsersReport;
+import com.zyuanyuan.pojo.UsersReport;
+import com.zyuanyuan.utils.MyMapper;
 
-public interface UsersReportMapper {
-    int deleteByPrimaryKey(String id);
-
-    int insert(UsersReport record);
-
-    int insertSelective(UsersReport record);
-
-    UsersReport selectByPrimaryKey(String id);
-
-    int updateByPrimaryKeySelective(UsersReport record);
-
-    int updateByPrimaryKey(UsersReport record);
+public interface UsersReportMapper extends MyMapper<UsersReport> {
 }
